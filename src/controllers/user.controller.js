@@ -8,7 +8,7 @@ import { apiResponse } from "../utils/apiResponse.js";
 const registerUser = asyncHandler(async (req,res) => {
     
     const {fullname,email,username,Password} = req.body
-    console.log(req.body);
+    
 
     if(
         [fullname,email,username,Password].some((field) => 
